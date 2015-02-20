@@ -1,0 +1,88 @@
+﻿MYSQLWrapper
+	Database
+		list
+		create
+		drop
+		void Database
+		ID
+		Tag
+		Tables
+	Table
+		list
+		create
+		drop
+		void Table
+		Columns
+		Rows
+		ID
+		Tag
+	Column
+		list
+		create
+		drop
+		void Column
+		ID
+		Type
+		bool Auto_Increment
+		bool Primary_key
+		bool Unique
+		values
+	Row
+		list
+		create
+		drop
+		void Row
+		ID
+		Values
+	User
+		list
+		add
+		drop
+		void User
+			username
+			password
+			Permissions
+
+	Permission
+		enum permissions
+		grant
+		remove
+		void Permission
+		bool granted
+	Query
+		QueryString
+		enum ReturnType
+			List<string>
+			List<string[]>
+			List<Row>
+			string
+			bool
+			void
+		BuildQuery(RequestType, Column|string[], RequestCondition, ReturnType)
+		enum RequestType
+			UPDATE
+			INSERT
+			DROP
+			SHOW
+			SELECT
+		RequestCondition
+	Connection
+		ConnectionString
+		bool SessionActive
+		openConnection
+		closeConnection
+		username
+		password
+		server
+		database
+	Console
+		InstallDependancies
+		bool redirectOutput
+		string[] args
+		send
+		sendLine
+		Launch
+		Show
+		Hide
+		Dispose		
+	UserControls
